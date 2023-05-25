@@ -1,0 +1,43 @@
+body {
+    background-color: #F1DEFF;
+    margin-left: 3em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+#add-item {
+    background-color: white;
+}
+
+#cancel {
+    background-color: white;
+}
+
+.todo {
+    width: 30%;
+    box-sizing: border-box;
+    background-color: #E0C4F7;
+    padding: .5em;
+    border-radius: .75em;
+    margin: 1em;
+}
+
+.todo h3 {
+    margin: 0px;
+}
+
+.todo p {
+    margin: 0px;
+}
+
+.completed {
+    opacity: 50%;
+    background-color: lavender;
+}
+
+.todo:hover {
+    cursor: pointer;
+}
