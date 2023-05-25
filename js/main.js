@@ -14,7 +14,18 @@ function main() {
     }
 }
 function isValid() {
-    return true;
+    var isValid = true;
+    var task = getInput("task").value;
+    if (task == "") {
+        isValid = false;
+        alert("Task name is required!");
+    }
+    var dueDate = getInput("date").value;
+    if (dueDate == "") {
+        isValid = false;
+        alert("Due date is required!");
+    }
+    return isValid;
 }
 function getToDoItem() {
     var myItem = new ToDoItem();

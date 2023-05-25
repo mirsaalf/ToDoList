@@ -29,7 +29,21 @@ function main() {
  * Check if form data is valid 
  */
 function isValid():boolean {
-    return true;
+    let isValid = true;
+
+    let task = getInput("task").value;
+    if (task == "") {
+        isValid = false;
+        alert("Task name is required!");
+    }
+
+    let dueDate = getInput("date").value;
+    if (dueDate == "") {
+        isValid = false;
+        alert("Due date is required!");
+    }
+
+    return isValid;
 }
 
 /**
