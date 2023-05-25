@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="ts/main.ts"></script>
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
     <h1>To-Do List</h1>
@@ -19,10 +18,6 @@
     <input type="date" id="date">
     <br>
 
-    <label for="priority">Priority</label>
-    <input type="color" id="priority">
-    <br>
-
     <label for="reminders">Reminders</label>
     <input type="text" id="reminder">
     <br>
@@ -31,8 +26,13 @@
     <input type="checkbox" id="completion">
     <br>
 
-    <input type="button" value="Cancel">
-    <input type="button" value="Add Task">
+    <input type="button" value="Cancel" id="cancel">
+    <input type="button" value="Add Task" id="add-item">
 
+    <h3>To-Do Items:</h3>
+    <div id="incomplete-items"></div>
+    <div id="complete-items"></div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
