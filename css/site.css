@@ -2,6 +2,10 @@ body {
     background-color: #F1DEFF;
     margin-left: 3em;
     font-family: 'Quicksand', sans-serif;
+    border: solid black 2px;
+    padding-left: 1em;
+    margin-right: 50%;
+    text-align: center;
 }
 
 input {
@@ -23,6 +27,7 @@ input {
     padding: .5em;
     border-radius: .75em;
     margin: 1em;
+    display: inline-block;
 }
 
 .todo h3 {
